@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="mecanicaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>model.Pedido</class>
+    <class>model.Veículo</class>
+    <class>model.Itempedido</class>
+    <class>model.Despesa</class>
+    <class>model.Os</class>
+    <class>model.Estoque</class>
+    <class>model.Mecânico</class>
+    <class>model.Recebimento</class>
+    <class>model.Cliente</class>
+    <class>model.Fornecedor</class>
+    <class>model.Orcamento</class>
+    <class>model.Peça</class>
+    <class>model.ItemOrcamento</class>
+    <class>model.Serviço</class>
+    <class>model.Pagamento</class>
+    <class>model.PecaComprada</class>
+    <class>model.Compra</class>
+    <class>model.PecaUtilizada</class>
+    <class>model.ServicoOs</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mecanica?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
